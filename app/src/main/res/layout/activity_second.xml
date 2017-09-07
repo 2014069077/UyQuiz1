@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.uy.uyquiz1.SecondActivity">
+
+    <TextView
+        android:id="@+id/csdescription"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="fill_horizontal"
+        android:text="BACHELOR OF SCIENCE IN COMPUTER SCIENCE (4 years)
+
+        Level I accredited by the Philippine Accrediting Association of Schools, Colleges, and Universities
+
+        Students under the BS Computer Science program are highly trained for software and system development.
+        The program’s main focus is to expose the students to different approaches and styles in developing programs
+        whether they are procedural or the object oriented type of system approach."
+        android:textAlignment="center"
+        android:layout_width="600dp"
+        android:layout_height="1000dp"
+        />
+
+    <Button
+        android:id="@+id/homebuttonCS"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="55dp"
+        android:onClick="callMainScreen"
+        android:text="Home"/>
+
+    <Button
+        android:id="@+id/isbuttonCS"
+        android:layout_alignBaseline="@id/homebuttonCS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="55dp"
+        android:onClick="callThirdActivity"
+        android:text="IS Program" />
+
+    <Button
+        android:id="@+id/itbuttonCS"
+        android:layout_alignBaseline="@id/homebuttonCS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="55dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:onClick="callFourthActivity"
+        android:text="IT Program" />
+
+</RelativeLayout>
